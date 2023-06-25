@@ -21,7 +21,7 @@ const optionDefinitions = [
 ];
 
 const options = commandLineArgs(optionDefinitions, {partial:true, stopAtFirstUnknown:false});
-console.log("makemigration options", options)
+
 if (options.help)
 {
     console.log("Sequelize migration creation tool\n\nUsage:");
