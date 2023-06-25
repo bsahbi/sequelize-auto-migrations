@@ -9,7 +9,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "sequelize": "^4.42.0",
-    "sqlite3": "^4.0.4"
+    "mysql2": "^3.4.1",
+    "sequelize": "^6.32.1",
+    "sequelize-auto-migrations": "file:.."
   }
 }

@@ -20,7 +20,7 @@ const optionDefinitions = [
     { name: 'help', type: Boolean, description: 'Show this message' }
 ];
 
-const options = commandLineArgs(optionDefinitions);
+const options = commandLineArgs(optionDefinitions, {partial:true, stopAtFirstUnknown:false});
 
 // Windows support
 if(!process.env.PWD){

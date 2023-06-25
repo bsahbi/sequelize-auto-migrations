@@ -20,8 +20,8 @@ const optionDefinitions = [
     { name: 'help', type: Boolean, description: 'Show this message' }
 ];
 
-const options = commandLineArgs(optionDefinitions);
-
+const options = commandLineArgs(optionDefinitions, {partial:true, stopAtFirstUnknown:false});
+console.log("makemigration options", options)
 if (options.help)
 {
     console.log("Sequelize migration creation tool\n\nUsage:");
