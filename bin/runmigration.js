@@ -52,7 +52,7 @@ if (options.help)
     process.exit(0);
 }
 
-const sequelize = require(modelsDir).sequelize;
+const sequelize = require(modelsDir)(null).sequelize;
 const queryInterface = sequelize.getQueryInterface();
 
 // execute all migration from
